@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    width: auto;
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../image/header-image.jpg');
+    background-position:center;
+    position: relative;
+}
+.logo,
+.navbar a{
+    color:white;
+}
+
+
+
+.navbar .logo{
+    float: left;
+    font-size: 30px;
+    margin-top: 12px;
+    font-weight: 400;
+    
+}
+
+
+.navbar .nav-item{
+    float: right;
+    display: inline-block;
+    margin: 25px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.navbar::after{
+    content:'';
+    display: block;
+    clear: both
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar a{
+    padding-bottom: 0.3rem ;
+} 
+
+.navbar a:hover{
+    border-bottom: 1px solid white;
+}
+
+.container{
+    max-width: 1200px;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+
+/* ############ Utility Class ############### */
+.lg-heading{
+    font-size: 3.5rem;
+    
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+/* .text-red{
+    color: red;
+} */
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-grey{
+    color: #555555;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 5px;
+    /* background-color: white; */
+    /* border-radius: 100px; */
+    font-size: small;
+    color: red;
+    
+}
+.btn-primary{
+    background-color: white;
+    border-radius: 100px;
+    border: 2px solid red;
+}
+.btn-primary:hover{
+    background: #ddd;
+}
+/* ############################################### */
+
+
+
+/* ########################################################### */
+p, li{
+    font-size: 1.5rem;
+    margin: 0.50em;
+    letter-spacing: 0.10em;
+    list-style: none;
+}
+
+h1, h2, h3 h4,h5{
+    letter-spacing: 0.15em;
+    margin: 10px;
+    
+}
+/* ############################################################### */
+
+.header-content{
+    /* border: 2px solid white; */
+    text-transform: uppercase;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2))
+
+}
+
+/* #################### style box ####################### */
+.showcase{
+    background: #ddd;
+    padding: 10rem;
+}
+
+.row{
+    height: 250px;
+    background: #fff;
+    box-shadow: 5px 5px 25px 0px #aaa;
+    /* vertical, horizontal, blur, opacity, color */
+}
+
+.row1{
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box,
+.row2 .text-box{
+    float:left;
+    width:50%;
+}
+.row1 .text-box,
+.row2 .img-box{
+    float:right;
+    width:50%;  
+}
+
+.row .img-box{
+    height: 100%;
+    
+}
+
+.row .text-box{
+    padding: 3rem;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row .text-box{
+    padding: 13px;
+    background: white;
+
+}
+
+.row .h1-text{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+    
+}
+.row .p-text{
+    margin-top: 15px;
+    color: #555;
+}
+
+.row::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+/* ######################## feature div ############# */
+.feature{
+    padding: 5rem;
+    
+}
+.box-wrapper{
+    box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.664);
+}
+.box{
+    width: 33.3333%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+}
+
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+.box-1, .box-3{
+    background-color:#363238;
+    color:white;
+}
+.box-2{
+    background-color: rgba(255, 0, 0, 0.712);
+    color: white;
+}
+/* ################### footer ################ */
+.footer{
+    background-color: #363238;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.social-media-links i{
+    margin: 10px;
+}
+/* ######################### about page styleing ############ */
+
+.bg-dark{
+    background-color: #263238;
+}
+.about{
+    padding: 5rem;
+    
+}
+
+.about-heading::after{
+    content:'';
+    display: block;
+    border-bottom: 4px solid #e63946;
+    width: 100%;
+}
+
+
+.left{
+    float: left;
+    width: 50%;
+    
+}
+.right{
+    float: right;
+    width: 50%;
+    
+}
+
+.about-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.about-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+
+.about-wrapper li::before{
+    content: '\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+/* ################################################################### */
+
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+.travel{
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.h2-class{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #e63946;
+}
+
+.travel{
+    font-weight: 700;
+    color: #555;
+}
+
+
+.finall{
+    background-color: rgba(255, 0, 0, 0.671);
+    padding: 1rem;
+    margin-top: 3rem;
+    color: #fff;
+    box-shadow: 5px 5px 10px #363238;
+}
+.last-p{
+    font-size: 2rem;
+    font-weight: 700;
+    float: left;
+    width: 70%;
+    text-align: center;
+    padding-top: 7px ;
+}
+
+.last-contact{
+    border: 2px solid white;
+    float: right;
+    width: 20%;
+    
+
+}
+
+.finall::after{
+    content: '';
+    display: block;
+    clear: both;
+    
+}
+
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    padding: 1rem 2.5rem;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    
+}
+/* ##################### contact us ################### */
+
+.contact-form{
+    padding: 5rem 0rem;
+    background-color: #aaa;
+}
+
+.company-adress{
+    float: left;
+    width: 49%;
+    background: #fff;
+    height: 600px;
+}
+.form{
+    height: 600px;
+    padding: 1rem;
+    font-size: 1.6rem;
+    float: right;
+    width: 49%;
+    background: #fff;
+}
+
+
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+    
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.form-wrapper .company-adress i{
+    display: inline-block;
+    margin-right:1rem;
+}
+.form-wrapper .company-adress h2{
+    display: inline-block;
+    text-transform: uppercase;
+    
+}
+
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+.form-wrapper .company-adress img{
+    max-width: 80%;
+    min-height: 20rem;
+    object-fit: cover;
+    object-position: right;
+    margin-top: 1rem;
+
+}
+
+.form h1::after{
+    content: '';
+    display: block;
+    border: 3px solid #e63946;
+    width: 100%;
+}
+
+.form-wrapper .form input{
+    padding: 0.3rem;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 200px;
+}
+
+.form label::after{
+    content: '* ';
+    color: #e63946;
+}
+.from-group{
+    margin: 1rem;
+}
+.form-wrapper .form input{
+    width: 100%;
+}
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: crimson;
+}
